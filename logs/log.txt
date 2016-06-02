@@ -1,0 +1,16 @@
+2016-06-02 18:37:58,660 - __main__ - INFO - Starting BreakfastAlarm App for user: 0
+2016-06-02 18:37:58,660 - __main__ - INFO - Getting breakfast profile for 0
+2016-06-02 18:37:58,660 - __main__ - INFO - Setting breakfast_profile for user: {'carb': 'toast', 'meat': 'boiled egg', 'error': 'No errors'}
+2016-06-02 18:37:58,660 - __main__ - INFO - Syncing device clock with current time via server-side correction
+2016-06-02 18:37:58,660 - __main__ - INFO - Old time: 1837.58
+2016-06-02 18:37:59,000 - __main__ - INFO - New time: 1837.59
+2016-06-02 18:37:59,000 - __main__ - INFO - Time synced successfully.
+2016-06-02 18:39:09,221 - __main__ - INFO - Starting BreakfastAlarm App for user: 0
+2016-06-02 18:46:29,405 - __main__ - INFO - Starting BreakfastAlarm App for user: 0
+2016-06-02 18:46:37,087 - __main__ - INFO - Starting BreakfastAlarm App for user: 0
+2016-06-02 18:46:37,087 - __main__ - INFO - Getting breakfast profile for 0
+2016-06-02 18:46:37,087 - __main__ - INFO - Setting breakfast_profile for user: {'carb': 'toast', 'meat': 'boiled egg', 'error': 'No errors'}
+2016-06-02 18:46:37,087 - __main__ - INFO - Syncing device clock with current time via server-side correction
+2016-06-02 18:46:37,087 - __main__ - INFO - Old time: 1846.37
+2016-06-02 18:46:37,000 - __main__ - INFO - New time: 1846.37
+2016-06-02 18:46:37,000 - __main__ - INFO - Time synced successfully.
