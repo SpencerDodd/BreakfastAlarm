@@ -1,21 +1,38 @@
-2016-06-03 12:32:58,722 - __main__ - INFO - Starting BreakfastAlarm App for user: 0
-2016-06-03 12:33:08,985 - __main__ - INFO - Starting BreakfastAlarm App for user: 0
-2016-06-03 12:33:08,986 - __main__ - INFO - Getting breakfast profile for 0
-2016-06-03 12:33:08,986 - Controller - INFO - Setting breakfast_profile for user: {'carb': 'toast', 'meat': 'boiled egg', 'error': 'No errors'}
-2016-06-03 12:33:08,986 - BreakfastSequenceFactory - INFO - Getting breakfast sequence for {'carb': 'toast', 'meat': 'boiled egg', 'error': 'No errors'}
-2016-06-03 12:33:08,986 - BreakfastSequenceFactory - INFO - Returning created <BreakfastSequenceEggsAndToast.BreakfastSequenceEggsAndToast instance at 0x7f13cfeb2e60>
-2016-06-03 12:33:08,986 - Controller - INFO - Syncing device clock with current time via server-side correction
-2016-06-03 12:33:08,986 - Controller - INFO - Old time: 1233.08
-2016-06-03 12:33:09,000 - Controller - INFO - New time: 1233.09
-2016-06-03 12:33:09,000 - Controller - INFO - Time synced successfully.
-2016-06-03 12:33:29,203 - __main__ - INFO - Starting BreakfastAlarm App for user: 0
-2016-06-03 12:33:29,203 - __main__ - INFO - Getting breakfast profile for 0
-2016-06-03 12:33:29,203 - Controller - INFO - Setting breakfast_profile for user: {'carb': 'toast', 'meat': 'boiled egg', 'error': 'No errors'}
-2016-06-03 12:33:29,203 - BreakfastSequenceFactory - INFO - Getting breakfast sequence for {'carb': 'toast', 'meat': 'boiled egg', 'error': 'No errors'}
-2016-06-03 12:33:29,203 - BreakfastSequenceFactory - INFO - Returning created <BreakfastSequenceEggsAndToast.BreakfastSequenceEggsAndToast instance at 0x7f68bea90e60>
-2016-06-03 12:33:29,203 - Controller - INFO - Syncing device clock with current time via server-side correction
-2016-06-03 12:33:29,203 - Controller - INFO - Old time: 1233.29
-2016-06-03 12:33:29,000 - Controller - INFO - New time: 1233.29
-2016-06-03 12:33:29,000 - Controller - INFO - Time synced successfully.
-2016-06-03 12:34:00,005 - Controller - INFO - Initiating breakfast sequence
-2016-06-03 12:34:00,005 - BreakfastSequenceEggsAndToast - INFO - Initiating Breakfast Sequence
+2016-06-03 12:49:59,116 - __main__ - INFO - Starting BreakfastAlarm App for user: 0
+2016-06-03 12:49:59,116 - __main__ - INFO - Getting breakfast profile for 0
+2016-06-03 12:49:59,116 - Controller - INFO - Setting breakfast_profile for user: {'carb': 'toast', 'meat': 'boiled egg', 'error': 'No errors'}
+2016-06-03 12:49:59,116 - BreakfastSequenceFactory - INFO - Getting breakfast sequence for {'carb': 'toast', 'meat': 'boiled egg', 'error': 'No errors'}
+2016-06-03 12:49:59,116 - BreakfastSequenceFactory - INFO - Returning created <BreakfastSequenceEggsAndToast.BreakfastSequenceEggsAndToast instance at 0x7faad6035e60>
+2016-06-03 12:49:59,116 - Controller - INFO - Syncing device clock with current time via server-side correction
+2016-06-03 12:49:59,116 - Controller - INFO - Old time: 1249.59
+2016-06-03 12:50:04,156 - Controller - ERROR - Failed to sync time
+Traceback (most recent call last):
+  File "/root/Programming/BreakfastAlarm/src/Controller.py", line 56, in sync_time_with_server
+    response = client.request('pool.ntp.org')
+  File "/root/Programming/BreakfastAlarm/venv/local/lib/python2.7/site-packages/ntplib.py", line 316, in request
+    raise NTPException("No response received from %s." % host)
+NTPException: No response received from pool.ntp.org.
+2016-06-03 12:50:04,156 - Controller - INFO - Initiating breakfast sequence
+2016-06-03 12:50:04,156 - BreakfastSequenceEggsAndToast - INFO - Initiating Breakfast Sequence
+2016-06-03 13:02:16,127 - __main__ - INFO - Starting BreakfastAlarm App for user: 0
+2016-06-03 13:02:16,127 - __main__ - INFO - Getting breakfast profile for 0
+2016-06-03 13:02:16,127 - Controller - INFO - Setting breakfast_profile for user: {'carb': 'toast', 'meat': 'boiled egg', 'error': 'No errors'}
+2016-06-03 13:02:16,127 - BreakfastSequenceFactory - INFO - Getting breakfast sequence for {'carb': 'toast', 'meat': 'boiled egg', 'error': 'No errors'}
+2016-06-03 13:02:16,127 - BreakfastSequenceFactory - INFO - Returning created <BreakfastSequenceEggsAndToast.BreakfastSequenceEggsAndToast instance at 0x7f3ae49ede60>
+2016-06-03 13:02:16,128 - Controller - INFO - Syncing device clock with current time via server-side correction
+2016-06-03 13:02:16,128 - Controller - INFO - Old time: 1302.16
+2016-06-03 13:02:16,000 - Controller - INFO - New time: 1302.16
+2016-06-03 13:02:16,000 - Controller - INFO - Time synced successfully.
+2016-06-03 13:07:48,704 - __main__ - INFO - Starting BreakfastAlarm App for user: 0
+2016-06-03 13:07:48,704 - __main__ - INFO - Getting breakfast profile for 0
+2016-06-03 13:07:48,704 - Controller - INFO - Setting breakfast_profile for user: {'carb': 'toast', 'error': 'No errors', 'meat': 'boiled egg', 'alarm_time': '0800'}
+2016-06-03 13:08:13,377 - __main__ - INFO - Starting BreakfastAlarm App for user: 0
+2016-06-03 13:08:13,377 - __main__ - INFO - Getting breakfast profile for 0
+2016-06-03 13:08:13,377 - Controller - INFO - Setting breakfast_profile for user: {'carb': 'toast', 'error': 'No errors', 'meat': 'boiled egg', 'alarm_time': '0800'}
+2016-06-03 13:08:13,377 - Controller - INFO - Alarm time changed from None to 0800
+2016-06-03 13:08:13,377 - BreakfastSequenceFactory - INFO - Getting breakfast sequence for {'carb': 'toast', 'error': 'No errors', 'meat': 'boiled egg', 'alarm_time': '0800'}
+2016-06-03 13:08:13,377 - BreakfastSequenceFactory - INFO - Returning created <BreakfastSequenceEggsAndToast.BreakfastSequenceEggsAndToast instance at 0x7faea5bf0050>
+2016-06-03 13:08:13,377 - Controller - INFO - Syncing device clock with current time via server-side correction
+2016-06-03 13:08:13,377 - Controller - INFO - Old time: 1308.13
+2016-06-03 13:08:13,000 - Controller - INFO - New time: 1308.13
+2016-06-03 13:08:13,000 - Controller - INFO - Time synced successfully.

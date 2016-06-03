@@ -31,7 +31,12 @@ Polls the home base server and gets the breakfast profile for the device user.
 
 def get_breakfast_profile():
 	logger.info("Getting breakfast profile for {}".format(user_id))
-	return {"meat" : "boiled egg", "carb" : "toast", "error" : "No errors"}
+	return {
+		"meat" : "boiled egg", 
+		"carb" : "toast", 
+		"alarm_time" : "0800", 
+		"error" : "No errors"
+	}
 
 
 """

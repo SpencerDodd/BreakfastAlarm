@@ -40,7 +40,7 @@ class Controller:
 		self.breakfast_profile = None
 		self.breakfast_sequence = None
 		self.breakfast_initiated = False
-		self.alarm_time = '1234'
+		self.alarm_time = None
 	"""
 	This method polls the ntplib library and syncs the device's time with server-side
 	time-keeping to account for clock drift, ensuring that the device always begins
@@ -75,15 +75,15 @@ class Controller:
 		if breakfast_profile["error"] == "No errors":
 			self.logger.info("Setting breakfast_profile for user: {}".format(breakfast_profile))
 			self.breakfast_profile = breakfast_profile
+			self.set_alarm_time(breakfast_profile["alarm_time"])
 		else:
 			self.logger.debug("Could not set breakfast profile.")
 
 	"""
 	Sets the time of the alarm
 	"""
-	def set_alarm_time(self):
+	def set_alarm_time(self, new_alarm_time):
 		old_alarm_time = self.alarm_time
-		new_alarm_time = '0600'
 		self.alarm_time = new_alarm_time
 		self.logger.info("Alarm time changed from {} to {}".format(old_alarm_time, new_alarm_time))
 
@@ -121,7 +121,7 @@ class Controller:
 	breakfast profile that has been given to the Controller.
 	"""
 	def start(self):
-		if self.breakfast_profile is not None:
+		if self.breakfast_profile is not None and self.alarm_time is not None:
 			self.breakfast_sequence = BreakfastSequenceFactory().get_sequence(self.breakfast_profile)
 			self.sync_time_with_server()
 			self.mainloop()
